@@ -1,0 +1,54 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MAIN */
+.main-container{
+    height: calc(100vh - 100px);
+}
+
+aside{
+    width: 300px;
+    height: 100%;
+    background-color: #000000;
+}
+
+.content{
+    width: calc(100% -300px);
+    height: 100%;
+}
+
+
+
+/* FOOTER */
+footer{
+    color: white;
+}
+
+.footer-container{
+    height: 100px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* DEBUG */
+.debug .main-container{
+    background-color: darksalmon;
+}
+
+.debug footer .footer-container div{
+    background-color: indianred;
+    padding: 20px 60px;
+
+}
