@@ -25,11 +25,41 @@ aside{
     width: 300px;
     height: 100%;
     background-color: #000000;
+    color: #a3a3a3;
+}
+
+aside h3{
+    padding-bottom: 10px;
+}
+.playlist-list{
+    padding-bottom: 250px;
+}
+
+#download{
+    padding-bottom: 15px;
+}
+
+#user{
+    padding: 20px 0;
+}
+
+.playlist-list ul li{
+    padding: 10px 0;
+}
+
+aside div ul{
+    list-style: none;
+}
+
+aside div ul li a{
+    text-decoration: none;
+    color: #a3a3a3;
 }
 
 .content{
     width: calc(100% - 300px);
     height: 100%;
+    overflow: auto;
 }
 
 .upgrade{
@@ -37,6 +67,48 @@ aside{
     top: 0;
     z-index: 20;
     background-color: #080b12;
+}
+
+nav{
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #64666b;
+    padding: 0 10px;
+}
+
+section h2{
+    padding-bottom: 10px;
+}
+
+section p{
+    padding-bottom: 10px;
+}
+
+#recently, #for-you, #popular-artists{
+    margin: 10px 15px;
+}
+
+.cover-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cover{
+    width: calc((100% / 6) - 10px);
+    margin-right: 10px;
+    margin-bottom: 15px;
 }
 
 
@@ -55,12 +127,35 @@ footer{
 
 
 /* DEBUG */
+.debug aside #logo{
+    height: 80px;  
+}
+
+.debug aside .nav{
+    height: 150px; 
+    background-color: lightcoral;
+}
+
+.debug .new-playlist{
+    background-color: darksalmon;
+    height: 50px;
+}
+
 .debug main .main-container .content{
     background-color: darksalmon;
 }
 
 .debug main .main-container .content .upgrade{
     height: 80px;
+}
+
+.debug main div section .cover-list{
+    height: 150px;
+}
+
+.debug main div section div .cover{
+    background-color: bisque;
+    height: 70px;
 }
 
 .debug footer .footer-container div{
