@@ -11,8 +11,14 @@ body {
 }
 
 /* MAIN */
+main{
+    width: 100%;
+}
+
 .main-container{
+    width: 100%;
     height: calc(100vh - 100px);
+    display: flex;
 }
 
 aside{
@@ -22,10 +28,16 @@ aside{
 }
 
 .content{
-    width: calc(100% -300px);
+    width: calc(100% - 300px);
     height: 100%;
 }
 
+.upgrade{
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: #080b12;
+}
 
 
 /* FOOTER */
@@ -43,12 +55,16 @@ footer{
 
 
 /* DEBUG */
-.debug .main-container{
+.debug main .main-container .content{
     background-color: darksalmon;
+}
+
+.debug main .main-container .content .upgrade{
+    height: 80px;
 }
 
 .debug footer .footer-container div{
     background-color: indianred;
     padding: 20px 60px;
-
 }
+
